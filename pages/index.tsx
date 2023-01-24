@@ -37,7 +37,7 @@ const Home = ({
             <main className='relative pl-4 pb-24 lg:space-y-24 lg:pl-16'>
                 <Banner netflixOriginals={netflixOriginals}/>
                 <section className='md:space-y-24'>
-                    <Row title="뜨고 있는 콘텐츠" movies={trendingNow}/>
+                    <Row title="주목받고 있는 콘텐츠" movies={trendingNow}/>
                     <Row title="가장 많이 시청한 콘텐츠" movies={topRated} />
                     <Row title="액션 스릴러 작품" movies={actionMovies} />
                     {/* My List */}
