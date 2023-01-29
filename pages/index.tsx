@@ -7,6 +7,8 @@ import { Movie } from '@/typings'
 import Row from '@/components/Row'
 import useAuth from '@/hooks/useAuth'
 import { useRecoilValue } from 'recoil'
+import { modalState } from '@/atoms/modalAtom'
+import Modal from '@/components/Modal'
 
 
 interface Props {
@@ -31,7 +33,7 @@ const Home = ({
     trendingNow,
 }:Props) => {
     const { loading } = useAuth()
-    // const showModal = useRecoilValue()
+    const showModal = useRecoilValue(modalState)
     // const [showModal, setShowModal] = React.useState(false)
 
     if( loading) return null
@@ -56,7 +58,7 @@ const Home = ({
                     <Row title="평론가 호평을 받은 다큐멘터리" movies={documentaries} />
                 </section>
             </main>
-            {/* Modal */}
+            {showModal && <Modal/>}
         </div>
     )
 }

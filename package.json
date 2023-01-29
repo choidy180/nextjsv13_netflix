@@ -10,7 +10,10 @@
     "vercel-deploy": "next build && next export"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@heroicons/react": "^2.0.13",
+    "@mui/material": "^5.11.6",
     "@next/font": "13.1.5",
     "@react-icons/all-files": "^4.1.0",
     "@types/node": "18.11.18",
