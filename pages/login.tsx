@@ -1,5 +1,6 @@
+import useAuth from '@/hooks/useAuth';
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/image";
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { SubmitHandler } from 'react-hook-form/dist/types';
@@ -11,6 +12,7 @@ interface Inputs {
 
 function login() {
     const [login, setLogin] = useState(false);
+    const { signIn, signUp } = useAuth()
 
     const {
         register,
@@ -20,9 +22,9 @@ function login() {
     } = useForm<Inputs>()
     const onSubmit: SubmitHandler<Inputs> = async ({ email, password }) => {
         if (login) {
-            // await signIn(email, password)
+            await signIn(email, password)
         } else {
-            // await signUp(email, password)
+            await signUp(email, password)
         }
     }
 
@@ -35,11 +37,13 @@ function login() {
             </Head>
             <Image
                 src={'https://rb.gy/p2hphi'}
-                layout='fill'
                 className='-z-10 !hidden opacity-60 sm:!inline'
-                objectFit='cover'
                 alt='login-back'
-            />
+                fill
+                sizes="100vw"
+                style={{
+                    objectFit: "cover"
+                }} />
             <img 
                 src="https://rb.gy/ulxxee"
                 className='absolute left-4 top-4 cursor-pointer object-contain md:left-10 md:top-6' 
@@ -100,7 +104,7 @@ function login() {
                 </div>
             </form>
         </div>
-    )
+    );
 }
 
 export default login
