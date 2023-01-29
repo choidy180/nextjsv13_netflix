@@ -61,8 +61,7 @@ const Home = ({
                     <Row title="평론가 호평을 받은 다큐멘터리" movies={documentaries} />
                 </section>
             </main>
-            {/* {showModal && <Modal/>} */}
-            <Modal/>
+            {showModal && <Modal/>}
         </div>
     )
 }

@@ -22,7 +22,8 @@ function Modal() {
                 `https://api.themoviedb.org/3/${
                     movie?.media_type === 'tv' ? 'tv' : 'movie'
                 }/${movie?.id}?api_key=${
-                    process.env.NEXT_PUBLIC_API_KEY
+                    // process.env.NEXT_PUBLIC_API_KEY
+                    '1cc87797184d3646a526d186ecec84e6'
                 }&language=en-US&append_to_response=videos`
             )
             .then((response) => response.json())
