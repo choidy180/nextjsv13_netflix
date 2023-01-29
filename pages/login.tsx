@@ -1,6 +1,6 @@
 import useAuth from '@/hooks/useAuth';
 import Head from 'next/head'
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { SubmitHandler } from 'react-hook-form/dist/types';
@@ -10,7 +10,7 @@ interface Inputs {
     password: string
 }
 
-function login() {
+function Login() {
     const [login, setLogin] = useState(false);
     const { signIn, signUp } = useAuth()
 
@@ -39,7 +39,7 @@ function login() {
                 src={'https://rb.gy/p2hphi'}
                 className='-z-10 !hidden opacity-60 sm:!inline'
                 alt='login-back'
-                fill
+                layout='fill'
                 sizes="100vw"
                 style={{
                     objectFit: "cover"
@@ -107,4 +107,4 @@ function login() {
     );
 }
 
-export default login
+export default Login

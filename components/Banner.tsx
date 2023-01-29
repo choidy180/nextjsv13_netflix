@@ -2,7 +2,7 @@ import { modalState, movieState } from '@/atoms/modalAtom'
 import { baseUrl } from '@/constants/movie'
 import { Movie } from '@/typings'
 import { InformationCircle } from 'heroicons-react'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import React from 'react'
 import { FaPlay } from 'react-icons/fa' 
 import { useRecoilState } from 'recoil'
@@ -21,6 +21,7 @@ function Banner({ netflixOriginals }: Props) {
             netflixOriginals[Math.floor(Math.random() * netflixOriginals.length)]
         )
     }, [netflixOriginals])
+    console.log(movie)
     return (
         <div className='flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12'>
             <div className='absolute top-0 left-0 -z-10 h-[95vh] w-screen'>
