@@ -48,16 +48,6 @@
 
 ---
 
-<p align="center">
-  <img src="./screenshots/checkout.png" alt="결제 화면" width="720" />
-  <br />
-  <em>Stripe 체크아웃</em>
-</p>
-
-> `./screenshots` 폴더에 캡처 파일만 넣으면 위가 바로 표시됩니다.
-
----
-
 ## 📦 설치 & 실행
 ```bash
 # 1) 레포지토리 복제
