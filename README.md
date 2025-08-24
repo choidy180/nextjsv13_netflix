@@ -48,19 +48,6 @@
 
 ---
 
-## 🖼️ 스크린샷
-<p align="center">
-  <img src="./screenshots/home.png" alt="홈 화면" width="720" />
-  <br />
-  <em>홈 화면 – 배너, 카테고리 섹션</em>
-</p>
-
-<p align="center">
-  <img src="./screenshots/detail.png" alt="디테일" width="720" />
-  <br />
-  <em>상세 페이지 – 줄거리, 캐스트, 유사작</em>
-</p>
-
 <p align="center">
   <img src="./screenshots/checkout.png" alt="결제 화면" width="720" />
   <br />
