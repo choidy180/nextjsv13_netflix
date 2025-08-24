@@ -65,7 +65,7 @@ npm run dev
 # URL: http://localhost:3000
 ```
 
-## 📦 Example Code (Auth Code)
+## ✈️ Example Code (Auth Code)
 ```bash
 
 import { auth } from '@/firebase';
