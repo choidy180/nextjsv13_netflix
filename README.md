@@ -1,6 +1,6 @@
 <!-- BANNER -->
 <p align="center">
-  <img src="./public/netflix-banner.jpg" alt="Netflix Clone Banner" width="200px" />
+  <img src="./public/stream.jpg" alt="stream Clone Banner" width="200px" />
 </p>
 
 <h1 align="center">🎬 NEXTJS-NETFLIX-CLONE</h1>
